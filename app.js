@@ -4,7 +4,7 @@ const input = document.getElementById("input");
 const send = document.getElementById("send");
 const chat = document.querySelector(".chat");
 
-var HOST = `https://simple-chattik.herokuapp.com`.replace(/^https/, "wws");
+var HOST = `https://simple-chattik.herokuapp.com`.replace(/^https/, "wss");
 var ws = new WebSocket(HOST);
 
 const user = prompt("Enter your name") || `U:${new Date().getTime()}`;
