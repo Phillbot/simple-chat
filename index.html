@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>WebSocket</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WebSocket</h1>
+      <div id="status">Status <span class="offline">Offline</span></div>
+    </header>
+
+    <div class="chat">
+      <div class="chat-header"></div>
+      <div class="chat-body">
+        <ul id="messages"></ul>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="input" autofocus autocomplete="off" />
+        <button id="send">SEND</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
